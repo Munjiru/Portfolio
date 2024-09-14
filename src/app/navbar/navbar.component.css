@@ -1,0 +1,336 @@
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  /* Container styling */
+  body {
+    font-family: Arial, sans-serif;
+     margin: 0;
+    padding: 0;
+}
+  
+  /* Navbar styling */
+  .navbar {
+    position: fixed; /* Fixes the navbar to the viewport */
+    background:#22223B;
+    height: 80px;
+    width: 100%;
+    top: 0; /* Ensure the navbar starts at the top of the viewport */
+    left: 0; /* Align the navbar to the left edge */
+    z-index: 1000; /* Ensures the navbar is above other content */
+}  
+  .navbar .logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    float: right;
+    margin-right: 10px;
+  }
+  
+  .navbar .nav-links li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  .navbar .nav-links li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  
+  .navbar a.active,
+  .navbar a:hover {
+    background:#4A4E69;
+    transition: background 0.3s;
+  }
+  
+  /* Toggle button styling */
+  .checkbtn {
+    font-size: 30px;
+    color: #F2E9E4;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px; /* Adjusted for better visibility */
+    cursor: pointer;
+    display: none;
+  }
+  
+  .check-toggle {
+    display: none;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 952px) {
+    .navbar .logo {
+      font-size: 30px;
+      padding-left: 50px;
+    }
+  
+    .navbar .nav-links li a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 858px) {
+    .checkbtn {
+      display: block; /* Ensure toggle button is visible */
+    }
+  
+    .nav-links {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%; /* Hide by default */
+      text-align: center;
+      transition: left 0.5s;
+      z-index: 1000; /* Ensure the menu is above other content */
+    }
+  
+    .nav-links li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  
+    .nav-links li a {
+      font-size: 20px;
+    }
+  
+    .nav-links a:hover,
+    .nav-links a.active {
+      background: none;
+      color: #0082e6;
+    }
+  
+    #check:checked ~ .nav-links {
+      left: 0;
+    }
+    .main-section {
+      padding: 20px 15px; /* Reduced padding on smaller screens */
+    }
+  
+    .main-section h1 {
+      font-size: 2em; /* Slightly smaller heading on smaller screens */
+    }
+  
+    .main-section p {
+      font-size: 1em; /* Adjust font size for paragraphs on smaller screens */
+    }
+  }
+  
+  /* Section styling */
+  .main-section {
+    padding: 0; /* Add padding for spacing */
+    margin:  0; /* Margin between sections */
+    background-color: #4A4E69; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Ensure full width and responsive layout */
+  .main-section {
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: space-between; /* Ensures space between content and image */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .content {
+    flex: 1; /* Takes up available space */
+    padding: 20px; /* Adds padding around content */
+  }
+  
+  .image {
+    flex: 1; /* Takes up available space */
+    display: flex;
+    justify-content: center; /* Centers image horizontally */
+    align-items: center; /* Centers image vertically */
+  }
+  
+  .image img {
+    max-width: 30%; /* Ensures the image fits within its container */
+    height: 5%; /* Maintains aspect ratio */
+  }
+    
+  /* Heading Styles */
+  .main-section h1 {
+    font-size: 2.5em; /* Large heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #9A8C98; /* Dark blue color for contrast */
+    text-align: center;
+    align-items: center;
+  }
+  .main-section h1 {
+    font-size: 3 em; /* Large heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center;
+    align-items: center;
+  }
+  
+  /* Paragraph Styles */
+  .main-section p {
+    font-size: 1.3em; /* Larger font size for readability */
+    line-height: 1.6; /* Line height for better readability */
+    color: #F2E9E4; /* Dark grey text for readability */
+    margin-bottom: 20px; /* Space below paragraphs */
+  }
+  .button {
+    color:#F2E9E4;
+    background-color:#C9ADA7;
+    border: #C9ADA7;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px 15px;
+    width: auto; 
+    cursor: pointer; 
+    display: inline-block; 
+    text-align: center; 
+}
+
+  .button-container {
+    margin-right: 20px; /* Adjust this value as needed */
+    display: inline-block;
+    text-decoration: none; 
+  }
+
+.button-container:last-of-type {
+  margin-right: 0; /* Removes margin from the last button */
+}
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color:#C9ADA7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.contact-form button:hover {
+  background-color: #cec3c1;
+}
+.project {
+  text-align: center;
+}
+.image-and-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+}
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color:#9A8C98;
+  color:#4A4E69;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.project a:hover {
+  background-color: #C9ADA7;
+}
+footer {
+  background-color: #9A8C98;
+  color: #F2E9E4;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #9c9896;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #a39791;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Flexbox layout for the two sections */
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Align content to left and right */
+  align-items: center;
+  max-width: 1200px; /* Adjust width to fit your design */
+  margin: 0 auto; /* Center the container */
+  padding: 10px 20px;
+}
+
+/* Styling for the sections */
+.social-links, .contact-info {
+ /* Allow both sections to take equal width */
+  text-align: right; /* Left-align text */
+}
+
+.contact-info {
+  
+  text-align: left; /* Right-align contact info */
+}
+
+/* Optional: Ensuring the links in contact-info behave like normal links */
+footer p a {
+  color: #F2E9E4;
+}
+
+footer p a:hover {
+  color: #C9ADA7;
+}
+
+
+.github-link:hover {
+  background-color:#9A8C98;
+}
+.skills-images {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  flex-wrap: wrap; /* Allow images to wrap to the next line if needed */
+  gap: 15px; /* Add space between images */
+  margin-top: 20px; /* Space above the images */
+}
+
+.skill-image {
+  width: 150px; /* Adjust the size of the images as needed */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 5px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow effect */
+}

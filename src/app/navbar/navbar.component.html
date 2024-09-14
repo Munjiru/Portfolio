@@ -1,0 +1,151 @@
+<nav class="navbar">
+  <input type="checkbox" id="check" class="check-toggle">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <label class="logo">BETH </label>
+  <ul class="nav-links">
+    <li><a class="active" href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="main-section" id="home">
+  <div class="content">
+    <h1>Home </h1>
+    <p>Hello there! My name is Beth Kamau. A front-end developer.
+      <br>
+      I am strongly interested in Software development. I daresay that a software developer is just like a surgeon who fixes up people and makes their lives easier.
+      <br>
+      <a href="#contact" class="button-container">
+        <button class="button">Hire Me</button>
+      </a>
+      <a href="https://github.com/Munjiru" class="button-container" target="_blank">
+        <button class="button">GitHub</button>
+      </a>
+      <a href="assets/IT BETH MUNJIRU KAMAU C.V.pdf" target="_blank" style="color: #C9ADA7; text-decoration: none;">
+        <button style="background-color: #C9ADA7; color: white; padding: 10px 15px; border: none; border-radius: 5px;">View My CV</button>
+      </a>
+    </p>
+  </div>
+  <div class="image">
+    <img src="assets/IMG_2149.jpg" alt="Description of image">
+  </div>
+</section>
+<section class="main-section" id="about">
+  <div class="content">
+    <h1>About</h1>
+    <p style="text-align: center">
+      Hi, I’m Beth Kamau, a front-end developer passionate about creating intuitive and engaging web applications. With a background in Business Information Technology, I enjoy transforming complex ideas into user-friendly designs. My expertise includes HTML, CSS, JavaScript, TypeScript, and Angular.
+      <br> I’m also skilled in using tools like Git and Angular Material. I’m driven by the challenge of crafting solutions that enhance user experiences and solve real-world problems.
+      <br><br>
+    </p>
+
+    <!-- New section for images -->
+    <div class="skills-images">
+      <img src="assets/html.png" alt="HTML" class="skill-image">
+      <img src="assets/css.png" alt="CSS" class="skill-image">
+      <img src="assets/javascript.png" alt="JavaScript" class="skill-image">
+      <img src="assets/typescript.png" alt="TypeScript" class="skill-image">
+      <img src="assets/angular.png" alt="Angular" class="skill-image">
+      <img src="assets/github.png" alt="Github" class="skill-image">
+    </div>
+  </div>
+</section>
+
+ <!-- About Section -->
+<section class="main-section" id="services">
+  <div class="content">
+  <h1>Services</h1>
+  <p style="text-align: center;">
+    I offer services across a wide range of areas. This includes:
+  </p>
+  <ol style="text-align: center; list-style-position: inside; font-size: 18px;">
+    <li>Software Development Projects</li>
+    <li>Consultancy Services</li>
+    <li>Web Design</li>
+  </ol>
+  <div class="skills-images">
+    <img src="assets/software development.jpeg" alt="Software Development" class="skill-image">
+    <img src="assets/consultancy.jpeg" alt="Consulatancy" class="skill-image">
+    <img src="assets/web design.jpeg" alt="Web Design" class="skill-image">
+    </div>
+  </div>
+</section> <!-- Services Section -->
+<section class="main-section" id="projects">
+  <div class="content">
+  <h1>Projects</h1>
+  <p>Here are some of the projects I have worked on:</p>
+
+  <!-- Python Tkinter Online Bookshop Project -->
+  <div class="project">
+    <h2>Online Bookshop System (Python Tkinter)</h2>
+    <p>This project is an Online Bookshop System developed using Python's Tkinter library. It features a user-friendly interface for browsing, purchasing books, and managing book inventory. The system offers full CRUD functionalities, allowing users to create, read, update, and delete book records, making it a comprehensive solution for managing an online bookstore.</p>
+    
+    <!-- Container for image and button -->
+    <div class="image-and-button">
+      <img src="assets/bookshop.PNG" alt="Online Bookshop System" style="width:100%; max-width:250px; height:auto;">
+      <a href="https://github.com/Munjiru/Online-bookshop" target="_blank" class="github-link">View Project on GitHub</a>
+    </div>
+  </div>
+  
+  
+  </div>
+</section>
+
+<section class="main-section" id="contact">
+  <div class="content">
+  <h1>Contact</h1>
+  <p></p>
+
+  <!-- Contact Form Start -->
+  <div class="contact-form">
+ 
+      <h2>Contact Me</h2>
+      <form action="/submit_form" method="POST">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="phone">Your Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+  <!-- Contact Form End -->
+</div> 
+</section> 
+
+<!-- Contact Section -->
+<footer>
+  <div class="footer-container">
+    <div class="social-links">
+      <p>
+        <a href="https://www.linkedin.com/in/beth-munjiru-60a3bb224/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Munjiru" target="_blank">GitHub</a>
+      </p>
+    </div>
+
+    <div class="contact-info">
+      <p> Beth Kamau</p>
+      <p><strong>Email:</strong> <a href="mailto:bethmunjiru1064&#64;gmail.com">bethmunjiru1064&#64;gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+254704927637">+254704927637</a></p>
+    </div>
+  </div>
+  
+  <p>2024 &copy; <span id="year"></span> Made with ❤️</p>
+</footer>
+
+
+
+<script>
+  // Automatically update the copyright year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
